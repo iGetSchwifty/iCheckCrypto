@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF8B1E2523A4D27D00DA34BA /* iCheckCrypto WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CF8B1E2423A4D27D00DA34BA /* iCheckCrypto WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF8B1E2B23A4D27D00DA34BA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8B1E2923A4D27D00DA34BA /* Interface.storyboard */; };
+		CF8B1E2D23A4D27E00DA34BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8B1E2C23A4D27E00DA34BA /* Assets.xcassets */; };
+		CF8B1E3423A4D27E00DA34BA /* iCheckCrypto WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF8B1E3323A4D27E00DA34BA /* iCheckCrypto WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF8B1E3923A4D27E00DA34BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B1E3823A4D27E00DA34BA /* ContentView.swift */; };
+		CF8B1E3B23A4D27E00DA34BA /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B1E3A23A4D27E00DA34BA /* HostingController.swift */; };
+		CF8B1E3D23A4D27E00DA34BA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B1E3C23A4D27E00DA34BA /* ExtensionDelegate.swift */; };
+		CF8B1E3F23A4D27E00DA34BA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B1E3E23A4D27E00DA34BA /* ComplicationController.swift */; };
+		CF8B1E4123A4D27E00DA34BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8B1E4023A4D27E00DA34BA /* Assets.xcassets */; };
+		CF8B1E4423A4D27F00DA34BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8B1E4323A4D27F00DA34BA /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF8B1E2623A4D27D00DA34BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8B1E1A23A4D27D00DA34BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF8B1E2323A4D27D00DA34BA;
+			remoteInfo = "iCheckCrypto WatchKit App";
+		};
+		CF8B1E3523A4D27E00DA34BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8B1E1A23A4D27D00DA34BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF8B1E3223A4D27E00DA34BA;
+			remoteInfo = "iCheckCrypto WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF8B1E4B23A4D27F00DA34BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF8B1E3423A4D27E00DA34BA /* iCheckCrypto WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8B1E4F23A4D27F00DA34BA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CF8B1E2523A4D27D00DA34BA /* iCheckCrypto WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF8B1E2023A4D27D00DA34BA /* iCheckCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCheckCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8B1E2423A4D27D00DA34BA /* iCheckCrypto WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCheckCrypto WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8B1E2A23A4D27D00DA34BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CF8B1E2C23A4D27E00DA34BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF8B1E2E23A4D27E00DA34BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF8B1E3323A4D27E00DA34BA /* iCheckCrypto WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iCheckCrypto WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8B1E3823A4D27E00DA34BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF8B1E3A23A4D27E00DA34BA /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		CF8B1E3C23A4D27E00DA34BA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CF8B1E3E23A4D27E00DA34BA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CF8B1E4023A4D27E00DA34BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF8B1E4323A4D27F00DA34BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF8B1E4523A4D27F00DA34BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF8B1E3023A4D27E00DA34BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF8B1E1923A4D27D00DA34BA = {
+			isa = PBXGroup;
+			children = (
+				CF8B1E2823A4D27D00DA34BA /* iCheckCrypto WatchKit App */,
+				CF8B1E3723A4D27E00DA34BA /* iCheckCrypto WatchKit Extension */,
+				CF8B1E2123A4D27D00DA34BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8B1E2123A4D27D00DA34BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF8B1E2023A4D27D00DA34BA /* iCheckCrypto.app */,
+				CF8B1E2423A4D27D00DA34BA /* iCheckCrypto WatchKit App.app */,
+				CF8B1E3323A4D27E00DA34BA /* iCheckCrypto WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF8B1E2823A4D27D00DA34BA /* iCheckCrypto WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CF8B1E2923A4D27D00DA34BA /* Interface.storyboard */,
+				CF8B1E2C23A4D27E00DA34BA /* Assets.xcassets */,
+				CF8B1E2E23A4D27E00DA34BA /* Info.plist */,
+			);
+			path = "iCheckCrypto WatchKit App";
+			sourceTree = "<group>";
+		};
+		CF8B1E3723A4D27E00DA34BA /* iCheckCrypto WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CF8B1E3823A4D27E00DA34BA /* ContentView.swift */,
+				CF8B1E3A23A4D27E00DA34BA /* HostingController.swift */,
+				CF8B1E3C23A4D27E00DA34BA /* ExtensionDelegate.swift */,
+				CF8B1E3E23A4D27E00DA34BA /* ComplicationController.swift */,
+				CF8B1E4023A4D27E00DA34BA /* Assets.xcassets */,
+				CF8B1E4523A4D27F00DA34BA /* Info.plist */,
+				CF8B1E4223A4D27F00DA34BA /* Preview Content */,
+			);
+			path = "iCheckCrypto WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CF8B1E4223A4D27F00DA34BA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF8B1E4323A4D27F00DA34BA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF8B1E1F23A4D27D00DA34BA /* iCheckCrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF8B1E5023A4D27F00DA34BA /* Build configuration list for PBXNativeTarget "iCheckCrypto" */;
+			buildPhases = (
+				CF8B1E1E23A4D27D00DA34BA /* Resources */,
+				CF8B1E4F23A4D27F00DA34BA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF8B1E2723A4D27D00DA34BA /* PBXTargetDependency */,
+			);
+			name = iCheckCrypto;
+			productName = iCheckCrypto;
+			productReference = CF8B1E2023A4D27D00DA34BA /* iCheckCrypto.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CF8B1E2323A4D27D00DA34BA /* iCheckCrypto WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF8B1E4C23A4D27F00DA34BA /* Build configuration list for PBXNativeTarget "iCheckCrypto WatchKit App" */;
+			buildPhases = (
+				CF8B1E2223A4D27D00DA34BA /* Resources */,
+				CF8B1E4B23A4D27F00DA34BA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF8B1E3623A4D27E00DA34BA /* PBXTargetDependency */,
+			);
+			name = "iCheckCrypto WatchKit App";
+			productName = "iCheckCrypto WatchKit App";
+			productReference = CF8B1E2423A4D27D00DA34BA /* iCheckCrypto WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CF8B1E3223A4D27E00DA34BA /* iCheckCrypto WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF8B1E4823A4D27F00DA34BA /* Build configuration list for PBXNativeTarget "iCheckCrypto WatchKit Extension" */;
+			buildPhases = (
+				CF8B1E2F23A4D27E00DA34BA /* Sources */,
+				CF8B1E3023A4D27E00DA34BA /* Frameworks */,
+				CF8B1E3123A4D27E00DA34BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iCheckCrypto WatchKit Extension";
+			productName = "iCheckCrypto WatchKit Extension";
+			productReference = CF8B1E3323A4D27E00DA34BA /* iCheckCrypto WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF8B1E1A23A4D27D00DA34BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Tacenda;
+				TargetAttributes = {
+					CF8B1E1F23A4D27D00DA34BA = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					CF8B1E2323A4D27D00DA34BA = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					CF8B1E3223A4D27E00DA34BA = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = CF8B1E1D23A4D27D00DA34BA /* Build configuration list for PBXProject "iCheckCrypto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF8B1E1923A4D27D00DA34BA;
+			productRefGroup = CF8B1E2123A4D27D00DA34BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF8B1E1F23A4D27D00DA34BA /* iCheckCrypto */,
+				CF8B1E2323A4D27D00DA34BA /* iCheckCrypto WatchKit App */,
+				CF8B1E3223A4D27E00DA34BA /* iCheckCrypto WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF8B1E1E23A4D27D00DA34BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8B1E2223A4D27D00DA34BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8B1E2D23A4D27E00DA34BA /* Assets.xcassets in Resources */,
+				CF8B1E2B23A4D27D00DA34BA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8B1E3123A4D27E00DA34BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8B1E4423A4D27F00DA34BA /* Preview Assets.xcassets in Resources */,
+				CF8B1E4123A4D27E00DA34BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF8B1E2F23A4D27E00DA34BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8B1E3B23A4D27E00DA34BA /* HostingController.swift in Sources */,
+				CF8B1E3F23A4D27E00DA34BA /* ComplicationController.swift in Sources */,
+				CF8B1E3923A4D27E00DA34BA /* ContentView.swift in Sources */,
+				CF8B1E3D23A4D27E00DA34BA /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF8B1E2723A4D27D00DA34BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF8B1E2323A4D27D00DA34BA /* iCheckCrypto WatchKit App */;
+			targetProxy = CF8B1E2623A4D27D00DA34BA /* PBXContainerItemProxy */;
+		};
+		CF8B1E3623A4D27E00DA34BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF8B1E3223A4D27E00DA34BA /* iCheckCrypto WatchKit Extension */;
+			targetProxy = CF8B1E3523A4D27E00DA34BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF8B1E2923A4D27D00DA34BA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF8B1E2A23A4D27D00DA34BA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF8B1E4623A4D27F00DA34BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF8B1E4723A4D27F00DA34BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF8B1E4923A4D27F00DA34BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iCheckCrypto WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = KLMZS2FKJ3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iCheckCrypto WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tacenda.iwatchomg.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		CF8B1E4A23A4D27F00DA34BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iCheckCrypto WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = KLMZS2FKJ3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iCheckCrypto WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tacenda.iwatchomg.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		CF8B1E4D23A4D27F00DA34BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLMZS2FKJ3;
+				IBSC_MODULE = iCheckCrypto_WatchKit_Extension;
+				INFOPLIST_FILE = "iCheckCrypto WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tacenda.iwatchomg.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		CF8B1E4E23A4D27F00DA34BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLMZS2FKJ3;
+				IBSC_MODULE = iCheckCrypto_WatchKit_Extension;
+				INFOPLIST_FILE = "iCheckCrypto WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tacenda.iwatchomg.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		CF8B1E5123A4D27F00DA34BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KLMZS2FKJ3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tacenda.iwatchomg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CF8B1E5223A4D27F00DA34BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KLMZS2FKJ3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tacenda.iwatchomg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF8B1E1D23A4D27D00DA34BA /* Build configuration list for PBXProject "iCheckCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8B1E4623A4D27F00DA34BA /* Debug */,
+				CF8B1E4723A4D27F00DA34BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF8B1E4823A4D27F00DA34BA /* Build configuration list for PBXNativeTarget "iCheckCrypto WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8B1E4923A4D27F00DA34BA /* Debug */,
+				CF8B1E4A23A4D27F00DA34BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF8B1E4C23A4D27F00DA34BA /* Build configuration list for PBXNativeTarget "iCheckCrypto WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8B1E4D23A4D27F00DA34BA /* Debug */,
+				CF8B1E4E23A4D27F00DA34BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF8B1E5023A4D27F00DA34BA /* Build configuration list for PBXNativeTarget "iCheckCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8B1E5123A4D27F00DA34BA /* Debug */,
+				CF8B1E5223A4D27F00DA34BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF8B1E1A23A4D27D00DA34BA /* Project object */;
+}
