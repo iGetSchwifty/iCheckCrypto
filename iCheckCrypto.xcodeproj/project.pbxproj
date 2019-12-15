@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28D47C3AC807F88394D02410 /* Pods_iCheckCrypto_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F20E706E8A52D90B421ACFD /* Pods_iCheckCrypto_WatchKit_Extension.framework */; };
+		9E859EF3C2723740B0CDDFCF /* Pods_iCheckCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03626410955BBE6611AAD550 /* Pods_iCheckCrypto.framework */; };
+		BE365023F564BF60D3B13115 /* Pods_iCheckCrypto_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9787901082C35BDC2EDE3F88 /* Pods_iCheckCrypto_WatchKit_App.framework */; };
+		CF33074823A69C6A002FE5B8 /* PriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF33074723A69C6A002FE5B8 /* PriceService.swift */; };
 		CF8B1E2523A4D27D00DA34BA /* iCheckCrypto WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CF8B1E2423A4D27D00DA34BA /* iCheckCrypto WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF8B1E2B23A4D27D00DA34BA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8B1E2923A4D27D00DA34BA /* Interface.storyboard */; };
 		CF8B1E2D23A4D27E00DA34BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8B1E2C23A4D27E00DA34BA /* Assets.xcassets */; };
@@ -62,6 +66,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03626410955BBE6611AAD550 /* Pods_iCheckCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCheckCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		113C51A1367C87E9C661E6D5 /* Pods-iCheckCrypto WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCheckCrypto WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-iCheckCrypto WatchKit Extension/Pods-iCheckCrypto WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		2F20E706E8A52D90B421ACFD /* Pods_iCheckCrypto_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCheckCrypto_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9787901082C35BDC2EDE3F88 /* Pods_iCheckCrypto_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCheckCrypto_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C8CEBACBA49C4EB0FF241A /* Pods-iCheckCrypto WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCheckCrypto WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-iCheckCrypto WatchKit App/Pods-iCheckCrypto WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		B6B865F1A0101A4BF26E7FF5 /* Pods-iCheckCrypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCheckCrypto.release.xcconfig"; path = "Target Support Files/Pods-iCheckCrypto/Pods-iCheckCrypto.release.xcconfig"; sourceTree = "<group>"; };
+		CF33074723A69C6A002FE5B8 /* PriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceService.swift; sourceTree = "<group>"; };
 		CF8B1E2023A4D27D00DA34BA /* iCheckCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCheckCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8B1E2423A4D27D00DA34BA /* iCheckCrypto WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCheckCrypto WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8B1E2A23A4D27D00DA34BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -75,25 +86,71 @@
 		CF8B1E4023A4D27E00DA34BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF8B1E4323A4D27F00DA34BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF8B1E4523A4D27F00DA34BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D646718D98CBC8E9CCF08D26 /* Pods-iCheckCrypto WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCheckCrypto WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-iCheckCrypto WatchKit App/Pods-iCheckCrypto WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		DC87A9514CCBBB79D994AEAA /* Pods-iCheckCrypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCheckCrypto.debug.xcconfig"; path = "Target Support Files/Pods-iCheckCrypto/Pods-iCheckCrypto.debug.xcconfig"; sourceTree = "<group>"; };
+		FC992234F1946B90AB98B12E /* Pods-iCheckCrypto WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCheckCrypto WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-iCheckCrypto WatchKit Extension/Pods-iCheckCrypto WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		36C1A955BF32D1926E61F5FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E859EF3C2723740B0CDDFCF /* Pods_iCheckCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D788B24A123D2F875ED872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE365023F564BF60D3B13115 /* Pods_iCheckCrypto_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF8B1E3023A4D27E00DA34BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D47C3AC807F88394D02410 /* Pods_iCheckCrypto_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		414CDD11981030BD72EEA20C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03626410955BBE6611AAD550 /* Pods_iCheckCrypto.framework */,
+				9787901082C35BDC2EDE3F88 /* Pods_iCheckCrypto_WatchKit_App.framework */,
+				2F20E706E8A52D90B421ACFD /* Pods_iCheckCrypto_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAADDC2DC26DD77E197239AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC87A9514CCBBB79D994AEAA /* Pods-iCheckCrypto.debug.xcconfig */,
+				B6B865F1A0101A4BF26E7FF5 /* Pods-iCheckCrypto.release.xcconfig */,
+				D646718D98CBC8E9CCF08D26 /* Pods-iCheckCrypto WatchKit App.debug.xcconfig */,
+				A7C8CEBACBA49C4EB0FF241A /* Pods-iCheckCrypto WatchKit App.release.xcconfig */,
+				FC992234F1946B90AB98B12E /* Pods-iCheckCrypto WatchKit Extension.debug.xcconfig */,
+				113C51A1367C87E9C661E6D5 /* Pods-iCheckCrypto WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF8B1E1923A4D27D00DA34BA = {
 			isa = PBXGroup;
 			children = (
 				CF8B1E2823A4D27D00DA34BA /* iCheckCrypto WatchKit App */,
 				CF8B1E3723A4D27E00DA34BA /* iCheckCrypto WatchKit Extension */,
 				CF8B1E2123A4D27D00DA34BA /* Products */,
+				AAADDC2DC26DD77E197239AB /* Pods */,
+				414CDD11981030BD72EEA20C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +184,7 @@
 				CF8B1E4023A4D27E00DA34BA /* Assets.xcassets */,
 				CF8B1E4523A4D27F00DA34BA /* Info.plist */,
 				CF8B1E4223A4D27F00DA34BA /* Preview Content */,
+				CF33074723A69C6A002FE5B8 /* PriceService.swift */,
 			);
 			path = "iCheckCrypto WatchKit Extension";
 			sourceTree = "<group>";
@@ -146,8 +204,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF8B1E5023A4D27F00DA34BA /* Build configuration list for PBXNativeTarget "iCheckCrypto" */;
 			buildPhases = (
+				DC2765C2D4D4422ACCDBFE93 /* [CP] Check Pods Manifest.lock */,
 				CF8B1E1E23A4D27D00DA34BA /* Resources */,
 				CF8B1E4F23A4D27F00DA34BA /* Embed Watch Content */,
+				36C1A955BF32D1926E61F5FE /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,8 +223,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF8B1E4C23A4D27F00DA34BA /* Build configuration list for PBXNativeTarget "iCheckCrypto WatchKit App" */;
 			buildPhases = (
+				15EE1F8D688F3EDB7AAE1A1E /* [CP] Check Pods Manifest.lock */,
 				CF8B1E2223A4D27D00DA34BA /* Resources */,
 				CF8B1E4B23A4D27F00DA34BA /* Embed App Extensions */,
+				90D788B24A123D2F875ED872 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF8B1E4823A4D27F00DA34BA /* Build configuration list for PBXNativeTarget "iCheckCrypto WatchKit Extension" */;
 			buildPhases = (
+				6C21595E903B2D94CD1876A5 /* [CP] Check Pods Manifest.lock */,
 				CF8B1E2F23A4D27E00DA34BA /* Sources */,
 				CF8B1E3023A4D27E00DA34BA /* Frameworks */,
 				CF8B1E3123A4D27E00DA34BA /* Resources */,
+				531660DB29E850945CABC7FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +326,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15EE1F8D688F3EDB7AAE1A1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iCheckCrypto WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		531660DB29E850945CABC7FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iCheckCrypto WatchKit Extension/Pods-iCheckCrypto WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iCheckCrypto WatchKit Extension/Pods-iCheckCrypto WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iCheckCrypto WatchKit Extension/Pods-iCheckCrypto WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C21595E903B2D94CD1876A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iCheckCrypto WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2765C2D4D4422ACCDBFE93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iCheckCrypto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF8B1E2F23A4D27E00DA34BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,6 +420,7 @@
 				CF8B1E3B23A4D27E00DA34BA /* HostingController.swift in Sources */,
 				CF8B1E3F23A4D27E00DA34BA /* ComplicationController.swift in Sources */,
 				CF8B1E3923A4D27E00DA34BA /* ContentView.swift in Sources */,
+				CF33074823A69C6A002FE5B8 /* PriceService.swift in Sources */,
 				CF8B1E3D23A4D27E00DA34BA /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +566,7 @@
 		};
 		CF8B1E4923A4D27F00DA34BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC992234F1946B90AB98B12E /* Pods-iCheckCrypto WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +591,7 @@
 		};
 		CF8B1E4A23A4D27F00DA34BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 113C51A1367C87E9C661E6D5 /* Pods-iCheckCrypto WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,6 +616,7 @@
 		};
 		CF8B1E4D23A4D27F00DA34BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D646718D98CBC8E9CCF08D26 /* Pods-iCheckCrypto WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -482,6 +636,7 @@
 		};
 		CF8B1E4E23A4D27F00DA34BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7C8CEBACBA49C4EB0FF241A /* Pods-iCheckCrypto WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -501,6 +656,7 @@
 		};
 		CF8B1E5123A4D27F00DA34BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC87A9514CCBBB79D994AEAA /* Pods-iCheckCrypto.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -514,6 +670,7 @@
 		};
 		CF8B1E5223A4D27F00DA34BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B865F1A0101A4BF26E7FF5 /* Pods-iCheckCrypto.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

@@ -7,7 +7,7 @@
 //
 
 import ClockKit
-
+import WatchKit
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
@@ -18,11 +18,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
     
     func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        handler(nil)
+        handler(Date())
     }
     
     func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        handler(nil)
+        handler(Date().addingTimeInterval(24 * 60 * 60))
     }
     
     func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
@@ -33,6 +33,14 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
+        
+//        if complication.family == .graphicCorner {
+//            let delegate = WKExtension.shared().delegate as! ExtensionDelegate
+//            let template = CLKComplicationTemplateGraphicCornerTextImage()
+//            template.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "omisego")!)
+//
+//        }
+//
         handler(nil)
     }
     
@@ -48,9 +56,17 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     // MARK: - Placeholder Templates
     
-    func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-        // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
-    }
+//    func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
+//        // This method will be called once per supported complication, and the results will be cached
+//        handler(nil)
+//    }
     
+    func getPlaceholderTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
+        let template = CLKComplicationTemplateGraphicCornerTextImage()
+        
+        template.textProvider = CLKSimpleTextProvider(text: "Loading...")
+        template.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "omisego")!)
+        
+        handler(template)
+    }
 }
