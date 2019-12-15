@@ -65,7 +65,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         let template = CLKComplicationTemplateGraphicCornerTextImage()
         
         template.textProvider = CLKSimpleTextProvider(text: "Loading...")
-        template.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "omisego")!)
+        //template.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "omisego")!)
         
         handler(template)
     }

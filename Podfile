@@ -22,6 +22,7 @@ target 'iCheckCrypto WatchKit Extension' do
   use_frameworks!
 
   # Pods for iCheckCrypto WatchKit Extension
-  pod 'RxSwift',    '~> 5.0'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
 end

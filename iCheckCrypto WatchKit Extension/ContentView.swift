@@ -18,7 +18,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image("omisego")
+            //Image("omisego")
             Text(display)
                 .onAppear(perform: {
                     self.getPrice()
