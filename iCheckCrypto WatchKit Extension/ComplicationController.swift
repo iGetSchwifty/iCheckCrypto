@@ -61,12 +61,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     // MARK: - Placeholder Templates
     
-//    func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-//        // This method will be called once per supported complication, and the results will be cached
-//        handler(nil)
-//    }
-    
-    func getPlaceholderTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
+    func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         let template = CLKComplicationTemplateGraphicCornerTextImage()
         
         template.textProvider = CLKSimpleTextProvider(text: "Loading...")
