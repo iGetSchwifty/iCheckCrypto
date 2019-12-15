@@ -37,11 +37,10 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Call the handler with the current timeline entry
         
         if complication.family == .graphicCorner {
-            //let delegate = WKExtension.shared().delegate as! ExtensionDelegate
-            //let template = CLKComplicationTemplateGraphicCornerTextImage()
-            //template.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "omisego")!)
             PriceService.getPrice().subscribe(onSuccess: { price in
-                handler(nil)
+                let template = CLKComplicationTemplateGraphicCornerTextImage()
+                template.textProvider = CLKSimpleTextProvider(text: price)
+                handler(CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template))
             }) { _ in
                 handler(nil)
             }.disposed(by: disposeBag)

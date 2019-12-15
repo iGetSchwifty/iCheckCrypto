@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -139,7 +139,6 @@
 				FC992234F1946B90AB98B12E /* Pods-iCheckCrypto WatchKit Extension.debug.xcconfig */,
 				113C51A1367C87E9C661E6D5 /* Pods-iCheckCrypto WatchKit Extension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
