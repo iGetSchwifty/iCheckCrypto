@@ -8,9 +8,11 @@
 
 import ClockKit
 import WatchKit
+import RxSwift
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
+    private let disposeBag = DisposeBag()
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void) {
@@ -34,14 +36,18 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
         
-//        if complication.family == .graphicCorner {
-//            let delegate = WKExtension.shared().delegate as! ExtensionDelegate
-//            let template = CLKComplicationTemplateGraphicCornerTextImage()
-//            template.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "omisego")!)
-//
-//        }
-//
-        handler(nil)
+        if complication.family == .graphicCorner {
+            //let delegate = WKExtension.shared().delegate as! ExtensionDelegate
+            //let template = CLKComplicationTemplateGraphicCornerTextImage()
+            //template.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "omisego")!)
+            PriceService.getPrice().subscribe(onSuccess: { price in
+                handler(nil)
+            }) { _ in
+                handler(nil)
+            }.disposed(by: disposeBag)
+        } else {
+            handler(nil)
+        }
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
