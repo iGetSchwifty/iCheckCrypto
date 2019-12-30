@@ -17,22 +17,19 @@ struct ContentView: View {
     let timer = Timer.publish(every: 15, on: .current, in: .common).autoconnect()
     
     var body: some View {
-        VStack {
-            //Image("omisego")
-            Text(display)
-                .onAppear(perform: {
-                    self.getPrice()
-                })
-                .onReceive(timer, perform: { _ in
-                    self.getPrice()
-                })
-                .foregroundColor(.white)
-        }
+        Text(display)
+            .onAppear(perform: {
+                self.getPrice()
+            })
+            .onReceive(timer, perform: { _ in
+                self.getPrice()
+            })
+            .foregroundColor(.white)
     }
     
     private func getPrice() {
-        PriceService.getPrice().subscribe(onSuccess: { price in
-            self.display = price
+        PriceService.getPrice()?.subscribe(onSuccess: { price in
+            self.display = "OMG: \(price)"
         }) { _ in
             self.display = "Error Fetching Price"
         }.disposed(by: self.disposeBag)

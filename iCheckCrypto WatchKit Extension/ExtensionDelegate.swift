@@ -7,8 +7,11 @@
 //
 
 import WatchKit
+import RxSwift
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
+    
+    private var disposeBag = DisposeBag()
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
@@ -16,11 +19,14 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidBecomeActive() {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(timeIntervalSinceNow: 15 * 60), userInfo: nil) { _ in}
+        disposeBag = DisposeBag()
     }
 
     func applicationWillResignActive() {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, etc.
+        disposeBag = DisposeBag()
     }
 
     func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {
@@ -30,7 +36,10 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             switch task {
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 // Be sure to complete the background task once you’re done.
-                backgroundTask.setTaskCompletedWithSnapshot(false)
+                PriceService.getPrice()?.subscribe({ _ in
+                    WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(timeIntervalSinceNow: 15 * 60), userInfo: nil) { _ in}
+                    backgroundTask.setTaskCompletedWithSnapshot(false)
+                }).disposed(by: disposeBag)
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
                 snapshotTask.setTaskCompleted(restoredDefaultState: true, estimatedSnapshotExpiration: Date.distantFuture, userInfo: nil)

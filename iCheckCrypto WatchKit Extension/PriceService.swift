@@ -9,24 +9,34 @@
 import RxSwift
 
 public class PriceService {
-    public static func getPrice() -> Single<String> {
-        return Single.create { observer -> Disposable in
-            let disposeObj = fetchResources(url: URL(string: "https://www.cryptocompare.com/coins/omg/overview/USD")!)
-                .subscribe(onSuccess: { response in
-                    if let responseStr = String(data: response ?? Data(), encoding: .utf8),
-                    let range = responseStr.range(of: "~OMG~USD~") {
-                        let endIndex = responseStr.index(range.lowerBound, offsetBy: 42)
-                        let priceChunks = responseStr[range.upperBound...endIndex].split(separator: "~")
-                        if priceChunks.count >= 2 {
-                            observer(.success(String("$" + priceChunks[1])))
-                            return
-                        }
+    private static let semaphore = DispatchSemaphore(value: 1)
+    private static var currentlySending = false
+    
+    public static var cachedPrice: String?
+    
+    public static func getPrice() -> Single<String>? {
+        semaphore.wait()
+        guard currentlySending == false else { return nil }
+        currentlySending = true
+        semaphore.signal()
+        
+        return fetchResources(url: URL(string: "https://www.cryptocompare.com/coins/omg/overview/USD")!)
+            .map { response in
+                semaphore.wait()
+                currentlySending = false
+                semaphore.signal()
+                if let responseStr = String(data: response ?? Data(), encoding: .utf8),
+                let range = responseStr.range(of: "~OMG~USD~") {
+                    let endIndex = responseStr.index(range.lowerBound, offsetBy: 42)
+                    let priceChunks = responseStr[range.upperBound...endIndex].split(separator: "~")
+                    if priceChunks.count >= 2 {
+                        let newPrice = String("$" + priceChunks[1])
+                        cachedPrice = newPrice
+                        return newPrice
                     }
-                    observer(.error(NSError(domain: "Invalid Price Fetch", code: 42, userInfo: nil)))
-                })
-            
-            return Disposables.create { disposeObj.dispose() }
-        }
+                }
+                return "Invalid Price Fetch"
+            }
     }
     
     private static func fetchResources(url: URL) -> Single<Data?> {
