@@ -9,22 +9,11 @@
 import RxSwift
 
 public class PriceService {
-    private static let semaphore = DispatchSemaphore(value: 1)
-    private static var currentlySending = false
-    
     public static var cachedPrice: String?
     
-    public static func getPrice() -> Single<String>? {
-        semaphore.wait()
-        guard currentlySending == false else { return nil }
-        currentlySending = true
-        semaphore.signal()
-        
+    public static func getPrice() -> Single<String> {
         return fetchResources(url: URL(string: "https://www.cryptocompare.com/coins/omg/overview/USD")!)
             .map { response in
-                semaphore.wait()
-                currentlySending = false
-                semaphore.signal()
                 if let responseStr = String(data: response ?? Data(), encoding: .utf8),
                 let range = responseStr.range(of: "~OMG~USD~") {
                     let endIndex = responseStr.index(range.lowerBound, offsetBy: 42)

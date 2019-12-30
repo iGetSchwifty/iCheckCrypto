@@ -36,7 +36,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             switch task {
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 // Be sure to complete the background task once you’re done.
-                PriceService.getPrice()?.subscribe({ _ in
+                PriceService.getPrice().subscribe({ _ in
                     WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Date(timeIntervalSinceNow: 15 * 60), userInfo: nil) { _ in}
                     backgroundTask.setTaskCompletedWithSnapshot(false)
                 }).disposed(by: disposeBag)

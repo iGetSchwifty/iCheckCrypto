@@ -28,7 +28,7 @@ struct ContentView: View {
     }
     
     private func getPrice() {
-        PriceService.getPrice()?.subscribe(onSuccess: { price in
+        PriceService.getPrice().subscribe(onSuccess: { price in
             self.display = "OMG: \(price)"
         }) { _ in
             self.display = "Error Fetching Price"
